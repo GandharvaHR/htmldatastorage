@@ -1,0 +1,19 @@
+<form action="2.html" onsubmit="callme()">
+    <p>Enter your name</p>
+    <input id="tbName" type="text">
+	<br/>
+	<br/>
+	
+	<input id="tbName1" type="text">
+	<br/>
+	<br/>
+    <button type="submit" value="submit">Submit</button>
+</form>
+<script>
+    function callme(){
+        var name = document.getElementById('tbName').value;
+		var name1 = document.getElementById('tbName1').value;
+        sessionStorage.setItem('userName', name);
+		sessionStorage.setItem('userName1', name1);
+    }
+</script>
